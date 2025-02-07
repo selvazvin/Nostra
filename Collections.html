@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind css cdn link -->
+    <link href=" https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css " rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Signup offer -->
+    <div class="signupoff">
+        <p >Sign Up and </p><h1>GET 20% OFF</h1><p> for your first Order</p>
+        <div class="p-5 font-bold text-xl cursor-pointer" id="offer-close">X</div>
+        
+        <!-- <i id="offer-close" style="margin-left: 10%; cursor: pointer;" class="fa-solid fa-xmark"></i> -->
+    </div>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar__left">
+        <h1 class="font-bold text-3xl">Nostra</h1>
+    </div>
+    <div class="navbar__right">
+        <p><a href="index.html">Home</a></p>
+        <p><a href="">New Arrival</a></p>
+        <p><a href="">Most Wanted</a></p>
+        <p><a href="Collections.html">Collections</a></p>
+        <p><a href="Contactus.html">Contact Us</a></p>
+    </div>
+    <div class="navbar-menu-toggle" onclick="showNavbar()">
+        <i class="fa-solid fa-bars"></i>
+
+    </div>
+</div>
+
+<!-- sidenavbar -->
+<div class="side-navbar">
+    <p style="text-align: right;" onclick="closeNavbar()"><i class="fa-solid fa-xmark"></i></p>
+
+    <div class="side-navbar-links">
+        <p class="side-navbar-link"><a href="index.html">Home</a></p>
+        <p class="side-navbar-link"><a href="">New Arrival</a></p>
+        <p class="side-navbar-link"><a href="">Most Wanted</a></p>
+        <p class="side-navbar-link"><a href="Collections.html">Collections</a></p>
+        <p class="side-navbar-link"><a href="Contactus.html">Contact Us</a></p>
+    </div>
+</div>
+
+
+    <div class="collection__container" >
+        <div class="collection__container__left">
+            <div class="collection__container__left__item">
+                <h1>Occasion</h1>
+                <p><input type="checkbox"> Summer</p>
+                <p><input type="checkbox"> Party </p>
+                <p><input type="checkbox"> Beach</p>
+            </div>
+            <div class="collection__container__left__item">
+                <h1>Colors</h1>
+                <p><input type="checkbox"> Red</p>
+                <p><input type="checkbox"> Blue </p>
+                <p><input type="checkbox"> White </p>
+                <p><input type="checkbox"> Green </p>
+            </div>
+            <div class="collection__container__left__item">
+                <h1>Arrivals</h1>
+                <p><input type="checkbox"> New </p>
+                <p><input type="checkbox"> Old </p>
+
+            </div>
+            <hr class="vertical-line">
+        </div>
+        <div class="collection__container__right">
+            
+            <div class="searchbox"><input type="text" placeholder="Search" id="search"></div>
+            <div class="collection__container__right__container" id="collections">
+                <div class="collection__container__right_item">
+                    <img src="./Image/c1.jpg" alt="">
+                    <h2>Floral Summer Shirt</h2>
+                    <p>₹220</p>
+                </div>
+                <div class="collection__container__right_item">
+                    <img src="./Image/c2.jpg" alt="">
+                    <h2>Summer Green</h2>
+                    <p>₹260</p>
+                </div>
+                <div class="collection__container__right_item">
+                    <img src="./Image/c3.jpg" alt="">
+                    <h2>Party Floral Shirt</h2>
+                    <p>₹399</p>
+                </div>
+                <div class="collection__container__right_item">
+                    <img src="./Image/c4.jpg" alt="">
+                    <h2>Floral Summer Shirt</h2>
+                    <p>₹399</p>
+                </div>
+                <div class="collection__container__right_item">
+                    <img src="./Image/c5.jpg" alt="">
+                    <h2>Beach Shirt</h2>
+                    <p>₹579</p>
+                </div>
+                <div class="collection__container__right_item">
+                    <img src="./Image/c6.jpg" alt="">
+                    <h2>Shirt Party Red</h2>
+                    <p>₹579</p>
+                </div>
+                <div class="collection__container__right_item">
+                    <img src="./Image/c7.jpg" alt="">
+                    <h2>Party Floral Shirt</h2>
+                    <p>₹339</p>
+                </div>
+                <div class="collection__container__right_item">
+                    <img src="./Image/c8.jpg" alt="">
+                    <h2>Shirt Party Red</h2>
+                    <p>₹579</p>
+                </div>
+                <div class="collection__container__right_item">
+                    <img src="./Image/c9.jpg" alt="">
+                    <h2>Floral Summer Shirt</h2>
+                    <p>₹220</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- News Letter -->
+    <div class="newsletter">
+        <h1 class="text-3xl pl-5 font-bold mt-10">Join our News Letter</h1>
+        <p class="text-2xl font-semibold">Signup for our email newspaper to get exclusive discounts, updates, and more
+        </p>
+        <input type="text">
+        <button
+            class="bg-black text-white p-2 pl-5 w-36 rounded-md text-lg font-bold flex items-center gap-2">Subscribe<i
+                class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
+
+    <!-- footer -->
+
+
+    <div class="footer">
+        <div class="footer-container">
+            <h1 class="text-3xl pl-5 font-bold">Nostra</h1>
+            <p class="text-2xl font-normal pl-5">The Standard chunk of loremused since the 1500s is reproduced below for
+                those internet</p>
+            <div class="footer-icon-container">
+                <i class="fa-brands fa-instagram "></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+        <p class="pl-5">@2023 Nostra.com</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

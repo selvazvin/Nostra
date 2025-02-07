@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind css cdn link -->
+    <link href=" https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css " rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Signup offer -->
+    <div class="signupoff">
+        <p>Sign Up and </p>
+        <h1>GET 20% OFF</h1>
+        <p> for your first Order</p>
+        <div class="p-5 font-bold text-xl cursor-pointer" id="offer-close">X</div>
+
+        <!-- <i id="offer-close" style="margin-left: 10%; cursor: pointer;" class="fa-solid fa-xmark"></i> -->
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar__left">
+            <h1 class="font-bold text-3xl">Nostra</h1>
+        </div>
+        <div class="navbar__right">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="">New Arrival</a></p>
+            <p><a href="">Most Wanted</a></p>
+            <p><a href="Collections.html">Collections</a></p>
+            <p><a href="Contactus.html">Contact Us</a></p>
+        </div>
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+    </div>
+
+    <!-- sidenavbar -->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closeNavbar()"><i class="fa-solid fa-xmark"></i></p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="#narrivals">New Arrival</a></p>
+            <p class="side-navbar-link"><a href="#mwanted">Most Wanted</a></p>
+            <p class="side-navbar-link"><a href="Collections.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="Contactus.html">Contact Us</a></p>
+        </div>
+    </div>
+
+    <!-- banner1 -->
+
+    <div class="banner1">
+        <h1 class="text-center font-bold text-white">Level up your style with our</h1>
+        <div class="banner1_container">
+
+            <div class="banner1-fa-icon">
+                <i class="fa-solid fa-caret-left" style="color: #ffffff; font-size:150px;"></i>
+            </div>
+            <div class="banner1__icon">
+                <p class="text-white">Summer Collections</p> <br>
+                <button
+                    class="bg-gray-200 text-black px-6 py-3 rounded-md text-lg font-bold flex items-center gap-2">Shop
+                    Now<i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="banner1-fa-icon">
+                <i class="fa-solid fa-caret-right" style="color: #ffffff; font-size:150px;"></i>
+            </div>
+
+        </div>
+        <div class="banner1__image">
+            <img src="./Image/slider-one.jpg" alt="">
+            
+        </div>
+    </div>
+    <!-- Brands -->
+    <div class="brands">
+        <h1 class="text-3xl font-bold p-5">Brands</h1>
+        <div class="brands__container">
+            <div>
+                <img src="./Image/adidas.png" alt="" width="80px" height="80px">
+                <p class="text-3xl font-semibold">Adidas</p>
+            </div>
+            <div>
+                <img src="./Image/behance.png" alt="" width="80px" height="80px">
+                <p class="text-3xl font-semibold">Behance</p>
+            </div>
+            <div>
+                <img src="./Image/leaves.png" alt="" width="80px" height="80px">
+                <p class="text-3xl font-semibold">Leaves</p>
+            </div>
+            <div>
+                <img src="./Image/simple.png" alt="" width="80px" height="80px">
+                <p class="text-3xl font-semibold">Simple</p>
+            </div>
+            <div>
+                <img src="./Image/twitch.png" alt="" width="80px" height="80px">
+                <p class="text-3xl font-semibold">Twitch</p>
+            </div>
+            <div>
+                <img src="./Image/adidas.png" alt="" width="80px" height="80px">
+                <p class="text-3xl font-semibold">Adidas</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Customer Experiences -->
+
+    <div class="custexp">
+        <div class="custexp__title">
+            <div>
+                <h1 class="text-3xl font-bold">We Provide Best</h1>
+                <h1 class="text-3xl font-bold">Customer Experiences</h1>
+            </div>
+            <div>
+                <p class="font-normal text-2xl">|| We ensure that our customer have the best shopping experience</p>
+            </div>
+        </div>
+        <div class="custexp__container">
+            <div class="custexp__container__item">
+                <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-circle-check"></i>
+                <h2 class="text-xl font-bold">Original Products</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+            </div>
+            <div class="custexp__container__item">
+                <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-face-smile"></i>
+                <h2 class="text-xl font-bold">Satisfaction Guarantee</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+            </div>
+            <div class="custexp__container__item">
+                <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-broom"></i>
+                <h2 class="text-xl font-bold">New Arrival Everyday</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+            </div>
+            <div class="custexp__container__item">
+                <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-truck-fast"></i>
+                <h2 class="text-xl font-bold">Fast & Free Shipping</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+            </div>
+        </div>
+    </div>
+    <!-- New Arrivals -->
+
+    <h1 class="text-3xl pl-5 font-bold mt-20">New Arrivals</h1><br>
+    <div class="newarrival">
+        <div class="newarrival__container">
+            <div class="newarrival__container__item">
+                <img src="./Image/New1.jpg" alt="" width="300px" height="400px">
+                <div class="overlay"></div>
+                <button
+                    class="bg-gray-200 text-black px-6 py-3 rounded-md text-lg font-bold flex items-center gap-2">Shop
+                    Now<i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="newarrival__container__item">
+                <img src="./Image/New2.jpg" alt="" width="300px" height="400px">
+                <div class="overlay"></div>
+                <button
+                    class="bg-gray-200 text-black px-6 py-3 rounded-md text-lg font-bold flex items-center gap-2">Shop
+                    Now<i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="newarrival__container__item">
+                <img src="./Image/New3.jpg" alt="" width="300px" height="400px">
+                <div class="overlay"></div>
+                <button
+                    class="bg-gray-200 text-black px-6 py-3 rounded-md text-lg font-bold flex items-center gap-2">Shop
+                    Now<i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="newarrival__container__item">
+                <img src="./Image/New4.jpg" alt="" width="300px" height="400px">
+                <div class="overlay"></div>
+                <button
+                    class="bg-gray-200 text-black px-6 py-3 rounded-md text-lg font-bold flex items-center gap-2">Shop
+                    Now<i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Most Wanted -->
+
+    <h1 class="text-3xl pl-5 font-bold mt-10">Most Wanted</h1><br>
+    <div class="mostwanted">
+        <div class="mostwanted__container">
+            <div class="mostwanted__container__item">
+                <img src="./Image/m1.jpg" alt="" width="300px" height="400px">
+                <p class="bg-red-700 pl-5 pr-5 pt-2 pb-2 text-white inline-block rounded-md">Sale</p>
+                <i class="fa-regular fa-heart" style="color: #000000; zoom: 2;"></i>
+            </div>
+            <div class="mostwanted__container__item">
+                <img src="./Image/m2.jpg" alt="" width="300px" height="400px">
+                <p class="bg-red-700 pl-5 pr-5 pt-2 pb-2 text-white inline-block rounded-md">Sale</p>
+                <i class="fa-regular fa-heart" style="color: #000000; zoom: 2;"></i>
+            </div>
+            <div class="mostwanted__container__item">
+                <img src="./Image/m3.jpg" alt="" width="300px" height="400px">
+                <p class="bg-red-700 pl-5 pr-5 pt-2 pb-2 text-white inline-block rounded-md">Sale</p>
+                <i class="fa-regular fa-heart" style="color: #000000; zoom: 2;"></i>
+            </div>
+            <div class="mostwanted__container__item">
+                <img src="./Image/m4.jpg" alt="" width="300px" height="400px">
+                <p class="bg-red-700 pl-5 pr-5 pt-2 pb-2 text-white inline-block rounded-md">Sale</p>
+                <i class="fa-regular fa-heart" style="color: #000000; zoom: 2;"></i>
+            </div>
+            <div class="mostwanted__container__item">
+                <img src="./Image/m5.jpg" alt="" width="300px" height="400px">
+                <p class="bg-red-700 pl-5 pr-5 pt-2 pb-2 text-white inline-block rounded-md">Sale</p>
+                <i class="fa-regular fa-heart" style="color: #000000; zoom: 2;"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- banner2 -->
+
+    <div class="banner2">
+        <div class="banner2__left">
+            <img src="./Image/banner2.jpg" alt="">
+        </div>
+        <div class="banner2__right">
+            <h1 class="text-5xl font-bold text-white">Limited Offer</h1>
+            <p class="text-2xl font-semibold text-white">35% OFF on this for the first 30 Customers</p>
+            <button class="bg-gray-200 text-black p-2 w-32 rounded-md text-lg font-bold flex items-center gap-2">Shop
+                Now<i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- News Letter -->
+    <div class="newsletter">
+        <h1 class="text-3xl pl-5 font-bold mt-10">Join our News Letter</h1>
+        <p class="text-2xl font-semibold">Signup for our email newspaper to get exclusive discounts, updates, and more
+        </p>
+        <input type="text">
+        <button
+            class="bg-black text-white p-2 pl-5 w-36 rounded-md text-lg font-bold flex items-center gap-2">Subscribe<i
+                class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
+
+    <!-- footer -->
+
+
+    <div class="footer">
+        <div class="footer-container">
+            <h1 class="text-3xl pl-5 font-bold">Nostra</h1>
+            <p class="text-2xl font-normal pl-5">The Standard chunk of loremused since the 1500s is reproduced below for
+                those internet</p>
+            <div class="footer-icon-container">
+                <i class="fa-brands fa-instagram "></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+        <p class="pl-5">@2023 Nostra.com</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
