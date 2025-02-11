@@ -281,7 +281,8 @@
     width: 90%;
     margin: 30px;
     border-radius: 10px;
-        
+    
+    
 }
 .searchbox
 {
@@ -289,7 +290,7 @@
     top: 76px;
     background-color: white;
     z-index: 10;
-    padding: 0px;
+    padding: 10px;
 }
 
 .collection__container__right_item img {

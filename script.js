@@ -76,6 +76,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+
+
+
 // var sidenav = document.querySelector(".side-navbar")
 
 // function showNavbar()
